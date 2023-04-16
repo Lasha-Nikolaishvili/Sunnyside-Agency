@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;900&family=Fraunces:wght@700;900&display=swap');
+/* 
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif; 
+*/
+:root {
+    /* Primary */
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    /*  (graphic design text) */
+    --dark-desaturated-yan: hsl(167, 40%, 24%);
+    /* (photography text) */
+    --dark-blue: hsl(198, 62%, 26%);
+    /* (footer) */
+    --dark-moderate-cyan: hsl(168, 34%, 36%);
+    --light-moderate-cyan: hsl(168, 34%, 71%);
+
+    /* Neutral */
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+}
+
+.very-dark-desaturated-blue {
+    color: var(--very-dark-desaturated-blue);
+}
+
+.dark-desaturated-yan {
+    color: var(--dark-desaturated-yan);
+}
+
+.dark-blue {
+    color: var(--dark-blue);
+}
+
+.dark-grayish-blue {
+    color: var(--dark-grayish-blue);
+}
+
+.grayish-blue {
+    color: var(--grayish-blue);
+}
+
+.heading-font {
+    font-family: 'Fraunces', serif; 
+}
+
+.regular-font {
+    font-family: 'Barlow', sans-serif;
+}
+
+.letter-spacing {
+    letter-spacing: 0.2em;
+}
+
+header {
+    height: 100vh;
+    background-image: url('./images/desktop/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Barlow', sans-serif;
+}
+
+header ul li a{
+    color: var(--white)!important;
+}
+
+.contact-btn {
+    background-color: var(--white);
+}
+
+.contact-btn:hover, .contact-btn:active{
+    background-color: rgba(157, 208, 241, 0.9)!important;
+    color: var(--white)!important;
+}
+
+.contact-btn:active {
+    transform: scale(0.98);
+}
+
+.navbar-toggler-icon {
+    background-image: url('./images/icon-hamburger.svg');
+    
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+h1 {
+    font-family: 'Fraunces', serif; 
+}
+
+.down-arrow {
+    animation: up-down 2s cubic-bezier(0.165, 0.84, 0.44, 1)  infinite;
+}
+
+.learn-more-sec > div > div {
+    padding: 9em;
+}
+
+.learn-more-link {
+    text-decoration: none;
+    transition: 100ms cubic-bezier(0.075, 0.82, 0.165, 1); 
+}
+
+.learn-more-link:active {
+    color: var(--very-dark-desaturated-blue);
+}
+
+.learn-more-link-1 {
+    border-bottom: 1px solid var(--yellow);
+    border-radius: 1px;
+}
+
+.learn-more-link-1:hover{
+    border-bottom: 5px solid var(--yellow);
+    border-radius: 2px;
+}
+
+.learn-more-link-2 {
+    border-bottom: 1px solid var(--soft-red);
+    border-radius: 1px;
+}
+
+.learn-more-link-2:hover{
+    border-bottom: 5px solid var(--soft-red);
+    border-radius: 2px;
+}
+
+.graph-photo-sec > div {
+    height: 50vw;
+    padding: 2.5em 6em!important;
+}
+
+.graph-photo-sec > div:first-of-type {
+    background-image: url('./images/desktop/image-graphic-design.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.graph-photo-sec > div:last-of-type {
+    background-image: url('./images/desktop/image-photography.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.c-img {
+    width: 5em;
+}
+
+.test-c {
+    width: 22em;
+}
+
+footer {
+    background-color: var(--light-moderate-cyan);
+    color: var(--dark-moderate-cyan);
+}
+
+.footer-links a {
+    transition: 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.footer-links a:hover, a:active {
+    color: var(--white);
+}
+
+.contact > a > svg > path{
+    transition: 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.contact > a:hover > svg > path {
+    fill: var(--white);
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.boldest {
+    font-weight: 900;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@keyframes up-down {    
+    50% {
+        transform: translateY(50%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/* Large Breakpoint */
+@media (max-width: 992px) {
+    .learn-more-sec > div > div {
+        padding: 7em;
+    }
+
+    header ul {
+        background-color: white;
+        padding: 1em;        
+    }
+
+    header ul li a{
+        color: var(--dark-grayish-blue)!important;
+        padding: .9em 0 !important;
+    }
+
+    .contact-btn {
+        background-color: var(--yellow);
+        width: 8em;
+        margin: auto;
+    }
+}
+
+/* Medium Breakpoint */
+@media (max-width: 768px) {
+    .gallery > img:nth-of-type(1) {
+        content:url('./images/mobile/image-gallery-milkbottles.jpg');        
+    }
+    .gallery > img:nth-of-type(2) {
+        content:url('./images/mobile/image-gallery-orange.jpg');        
+    }
+    .gallery > img:nth-of-type(3) {
+        content:url('./images/mobile/image-gallery-cone.jpg');        
+    }
+    .gallery > img:nth-of-type(4) {
+        content:url('./images/mobile/image-gallery-sugar-cubes.jpg');        
+    }
+
+    .img-transform {
+        content:url('./images/mobile/image-transform.jpg');
+    }
+    .img-stand-out {
+        content:url('./images/mobile/image-stand-out.jpg');
+    }
+
+    .graph-photo-sec > div {
+        height: 100vw;
+        /* width: 50vw; */
+        padding: 2.5em 10em!important;
+    }
+
+    .graph-photo-sec > div:first-of-type {
+        background-image: url('./images/mobile/image-graphic-design.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .graph-photo-sec > div:last-of-type {
+        background-image: url('./images/mobile/image-photography.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }    
+
+    .learn-more-sec > div > div {
+        padding: 5em; 
+    }
+
+    .graph-photo-sec > div {
+        padding: 2.5em 5em!important;
+    }
+}
+
+/* Small Breakpoint */
+@media (max-width: 576px) {
+    .learn-more-sec > div > div {
+        padding: 2.5em; 
+        text-align: center!important;
+    }
+
+    .graph-photo-sec > div {
+        padding: 2.5em 2.5em!important;
+        height: 70vh;
+    }
+}
