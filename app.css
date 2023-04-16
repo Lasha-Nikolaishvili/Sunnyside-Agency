@@ -30,7 +30,6 @@ font-family: 'Fraunces', serif;
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden !important;
 }
 
 .very-dark-desaturated-blue {
@@ -113,7 +112,7 @@ h1 {
     animation: up-down 2s cubic-bezier(0.165, 0.84, 0.44, 1)  infinite;
 }
 
-.learn-more-sec > div > div {
+.learn-more-sec > div > div > div {
     padding: 9em;
 }
 
@@ -218,7 +217,7 @@ footer {
 
 /* Large Breakpoint */
 @media (max-width: 992px) {
-    .learn-more-sec > div > div {
+    .learn-more-sec > div > div > div {
         padding: 7em;
     }
 
@@ -281,7 +280,7 @@ footer {
         background-position: center;
     }    
 
-    .learn-more-sec > div > div {
+    .learn-more-sec > div > div > div {
         padding: 5em; 
     }
 
@@ -292,7 +291,7 @@ footer {
 
 /* Small Breakpoint */
 @media (max-width: 576px) {
-    .learn-more-sec > div > div {
+    .learn-more-sec > div > div > div {
         padding: 2.5em; 
         text-align: center!important;
     }
